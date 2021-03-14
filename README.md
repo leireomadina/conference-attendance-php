@@ -20,7 +20,12 @@ https://attendance-crud-app.herokuapp.com/
 
 ### Project features:
 
-Coming soon...
+- PHP development environment with XAMPP
+- Apache server
+- Form
+- Responsive web design with mobile first approach
+  
+More features coming soon...
 
 --- 
 

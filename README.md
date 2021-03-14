@@ -22,7 +22,7 @@ https://attendance-crud-app.herokuapp.com/
 
 - PHP development environment with XAMPP
 - Apache server
-- Form
+- Form using a POST method
 - Responsive web design with mobile first approach
   
 More features coming soon...

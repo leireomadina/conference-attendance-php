@@ -1,5 +1,5 @@
 <main>
-  <form method="get" action="success.php">
+  <form method="post" action="success.php">
     <div class="mb-3">
       <label for="firstname" class="form-label">Name</label>
       <input type="text" class="form-control" id="firstname" aria-describedby="firstName" name="firstname">

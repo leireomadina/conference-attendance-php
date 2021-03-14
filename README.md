@@ -1,1 +1,27 @@
-# attendance
+# Conference attendance - PHP app
+
+This is a CRUD app that lets the user sign up for an IT conference. It is built using a PHP environment set up with XAMPP, Apache and MySQL, plus Heroku for deploying.
+
+### Tech stack and tools:
+
+- PHP
+- MySQL
+- XAMPP / Apache
+- Heroku
+- Boostrap
+- CSS3
+- HTML5
+  
+### Live preview
+
+Check this link to see the live version of the project (work in progress):
+
+https://attendance-crud-app.herokuapp.com/
+
+### Project features:
+
+Coming soon...
+
+--- 
+
+Thank you for your time 🙂

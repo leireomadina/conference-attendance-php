@@ -17,7 +17,7 @@
       </h3>
       <h4 class="card-subtitle mb-2 text-muted"><?php echo $_POST["specialty"]?></h4>
       <p class="card-text">Date of birth: <?php echo $_POST["dateofbirth"]?></p>
-      <p class="card-text">Email adress: <?php echo $_POST["email"]?></p>
+      <p class="card-text">Email address: <?php echo $_POST["email"]?></p>
       <p class="card-text">Contact number: <?php echo $_POST["phone"]?></p>
     </div>
   </article>

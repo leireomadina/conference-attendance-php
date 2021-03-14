@@ -5,7 +5,7 @@ This is a CRUD app that lets the user sign up for an IT conference. It is built 
 ### Tech stack and tools:
 
 - PHP
-- MySQL
+- MySQL / MariaDB
 - XAMPP / Apache
 - Heroku
 - Boostrap
@@ -22,7 +22,9 @@ https://attendance-crud-app.herokuapp.com/
 
 - PHP development environment with XAMPP
 - Apache server
-- Form using a POST method
+- Form + POST method setup
+- Database design with phpMyAdmin
+- Database connection with PDO method (PHP Data Objects)
 - Responsive web design with mobile first approach
   
 More features coming soon...

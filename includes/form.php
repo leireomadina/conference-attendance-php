@@ -1,20 +1,20 @@
 <main>
-  <form>
+  <form method="get" action="success.php">
     <div class="mb-3">
-      <label for="firstName" class="form-label">Name</label>
-      <input type="text" class="form-control" id="firstName" aria-describedby="firstName">
+      <label for="firstname" class="form-label">Name</label>
+      <input type="text" class="form-control" id="firstname" aria-describedby="firstName" name="firstname">
     </div>
     <div class="mb-3">
-      <label for="lastName" class="form-label">Last name</label>
-      <input type="text" class="form-control" id="lastName" aria-describedby="lastName">
+      <label for="lastname" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="lastname" aria-describedby="lastName" name="lastname">
     </div>
     <div class="mb-3">
-      <label for="dateOfBirth" class="form-label">Date of birth</label>
-      <input type="date" class="form-control" id="dateOfBirth" aria-describedby="dateOfBirth">
+      <label for="dateofbirth" class="form-label">Date of birth</label>
+      <input type="date" class="form-control" id="dateofbirth" aria-describedby="dateOfBirth" name="dateofbirth">
     </div>
     <div class="mb-3">
       <label for="specialty" class="form-label">Area of expertise</label>
-      <select class="form-select" aria-label="Default select example" id="specialty">
+      <select class="form-select" aria-label="Default select example" id="specialty" name="specialty">
         <option selected>Open this select menu</option>
         <option value="1">Software Developer</option>
         <option value="2">Frontend Developer</option>
@@ -26,24 +26,24 @@
     </div>
     <div class="mb-3">
       <label for="email" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
       <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </div>
     <div class="mb-3">
       <label for="phone" class="form-label">Contact number</label>
-      <input type="text" class="form-control" id="phone" aria-describedby="phoneHelp">
+      <input type="text" class="form-control" id="phone" aria-describedby="phoneHelp" name="phone" >
       <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.</div>
     </div>
     <div class="mb-3">
       <label for="password" class="form-label">Password</label>
-      <input type="password" class="form-control" id="password">
+      <input type="password" class="form-control" id="password" name="password">
     </div>
     <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="formCheck">
-      <label class="form-check-label" for="formCheck">Check me out</label>
+      <input type="checkbox" class="form-check-input" id="formcheck" name="formcheck">
+      <label class="form-check-label" for="formcheck" >Check me out</label>
     </div>
     <div class="d-grid gap-2 col-6 mx-auto">
-      <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+      <button type="submit" class="btn btn-primary btn-lg" name="submit">Submit</button>
     </div>
   </form>
 </main>

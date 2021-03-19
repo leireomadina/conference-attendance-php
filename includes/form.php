@@ -15,13 +15,12 @@
     <div class="mb-3">
       <label for="specialty" class="form-label">Area of expertise</label>
       <select class="form-select" aria-label="Default select example" id="specialty" name="specialty">
-        <option selected>Open this select menu</option>
-        <option value="Software Developer">Software Developer</option>
-        <option value="Frontend Developer">Frontend Developer</option>
-        <option value="Backend Developer">Backend Developer</option>
-        <option value="Full stack Developer">Full stack Developer</option>
-        <option value="UX/UI designer">UX/UI designer</option>
-        <option value="Other">Other</option>
+        <option value="1">Software Developer</option>
+        <option>Frontend Developer</option>
+        <option>Backend Developer</option>
+        <option>Full stack Developer</option>
+        <option>UX/UI designer</option>
+        <option>Other</option>
       </select>
     </div>
     <div class="mb-3">

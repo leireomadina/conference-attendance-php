@@ -24,7 +24,7 @@ https://attendance-crud-app.herokuapp.com/
 - Apache server
 - Form + POST method setup
 - Database design with phpMyAdmin
-- Database connection with PDO method (PHP Data Objects)
+- Database connection with PDO method (PHP Data Objects) and exception handling
 - Responsive web design with mobile first approach
   
 More features coming soon...

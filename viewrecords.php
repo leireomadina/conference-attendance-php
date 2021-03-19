@@ -1,7 +1,7 @@
 <!-- head -->
 <?php 
   $title = "View Records";
-  
+
   require_once "includes/head.php";
   require_once "db/db-config.php"; 
   
@@ -22,7 +22,10 @@
         <td><?php echo $result["firstname"] ?></td>
         <td><?php echo $result["lastname"] ?></td>
         <td><?php echo $result["name"] ?></td>
-        <td><a href="viewdetail.php?id=<?php echo $result["attendee_id"] ?>" class="btn btn-primary">View</a></td>
+        <td>
+          <a href="viewdetail.php?id=<?php echo $result["attendee_id"] ?>" class="btn btn-primary">View</a>
+          <a href="edit.php?id=<?php echo $result["attendee_id"] ?>" class="btn btn-warning">Edit</a>
+        </td>
       </tr>
     <?php } ?> 
     </tr>

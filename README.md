@@ -12,11 +12,13 @@ This is a CRUD app that lets the user sign up for an IT conference. It is built 
 - CSS3
 - HTML5
   
+<!-- 
 ### Live preview
 
 Check this link to see the live version of the project (work in progress):
 
 https://attendance-crud-app.herokuapp.com/
+-->
 
 ### Project features:
 

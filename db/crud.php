@@ -38,7 +38,7 @@
       return $result;
     }
 
-    // selects an existing record from the speciealties database
+    // selects an existing id record from the speciealties database
     public function getAttendeeDetails($id) {
       $sql = "SELECT * FROM attendee a inner join specialties s on a.specialty_id = s.specialty_id WHERE attendee_id = :id";
       $stmt = $this->db->prepare($sql);

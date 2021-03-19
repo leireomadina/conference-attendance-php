@@ -1,6 +1,7 @@
 <!-- head -->
 <?php 
   $title = "View Records";
+  
   require_once "includes/head.php";
   require_once "db/db-config.php"; 
   

@@ -11,8 +11,6 @@
   } else {
     $id = $_GET["id"];
     $result = $crud->getAttendeeDetails($id); // returns an array
-
-  
 ?>
 
 <article class="card mt-4 mb-4" style="width: 18rem;">

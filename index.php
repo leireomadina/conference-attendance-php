@@ -1,8 +1,11 @@
 <!-- head -->
 <?php 
   $title = "Index";
+  
   require_once "includes/head.php";
-  require_once "db/db-config.php";  
+  require_once "db/db-config.php";
+  
+  $results = $crud->getSpecialties();
 ?>
 <!-- header -->
 <?php 

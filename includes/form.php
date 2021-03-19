@@ -15,12 +15,10 @@
     <div class="mb-3">
       <label for="specialty" class="form-label">Area of expertise</label>
       <select class="form-select" aria-label="Default select example" id="specialty" name="specialty">
-        <option value="1">Software Developer</option>
-        <option>Frontend Developer</option>
-        <option>Backend Developer</option>
-        <option>Full stack Developer</option>
-        <option>UX/UI designer</option>
-        <option>Other</option>
+        <?php 
+          while($result = $results->fetch(PDO::FETCH_ASSOC)) { ?>
+            <option value="<?php echo $result["specialty_id"]?>"><?php echo $result["name"]?></option>
+        <?php } ?>
       </select>
     </div>
     <div class="mb-3">
@@ -42,7 +40,7 @@
       <label class="form-check-label" for="formcheck" >Check me out</label>
     </div>
     <div class="d-grid gap-2 col-6 mx-auto">
-      <button type="submit" class="btn btn-primary btn-lg" name="submit">Submit</button>
+      <button type="submit" class="btn btn-primary btn-lg m-3" name="submit">Submit</button>
     </div>
   </form>
 </main>

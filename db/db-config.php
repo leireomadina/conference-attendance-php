@@ -1,10 +1,18 @@
 <?php 
+  // DEVELOPMENT connection config
   // $host = "localhost" // same as:
-  $host = "127.0.0.1";
-  $db = "attendance_db";
-  $user = "root"; //mySQL default username 
-  $password = ""; // root user has no default password
-  $charset = "utf8mb4"; //character encoding
+  // $host = "127.0.0.1";
+  // $db = "attendance_db";
+  // $user = "root"; //mySQL default username 
+  // $pass = ""; // no default pass
+  // $charset = "utf8mb4"; //character encoding
+
+  // REMOTE Database connection
+  $host = "sql11.freesqldatabase.com";
+  $db = "sql11400409";
+  $user = "sql11400409"; 
+  $pass = "xJ15wYY8yl";
+  $charset = "utf8mb4";
 
  // data source name (dsn) setup: driver > host > db name > charset encoding
   $dsn = "mysql:host=$host;dbname=$db;charset=$charset";

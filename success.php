@@ -1,10 +1,10 @@
-<!-- Imports head tags and bootstrap/css styles -->
+<!-- imports head tags and bootstrap/css styles -->
 <?php 
   $title = "Success";
   require_once "includes/head.php";
   require_once "db/db-config.php";
 
-  //checks if the submit variable exists (button name attribute): prevents the user from casually accessing the success page from an url
+  // checks if the submit variable exists (button name attribute): prevents the user from casually accessing the success page from an url
   if(isset($_POST["submit"])) {
     $fname = $_POST["firstname"];
     $lname = $_POST["lastname"];

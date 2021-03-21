@@ -31,6 +31,7 @@
 </div>
 
   <?php   }?>
+  
 <!-- footer -->
 <?php 
   require_once "includes/footer.php"; 

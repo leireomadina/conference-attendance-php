@@ -10,7 +10,7 @@
   $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
   try{
-    // Connects with the DB using PDO plus the dsn setup with the default mySQL user + password
+    // connects with the DB using PDO plus the dsn setup with the default mySQL user + password
     $pdo = new PDO($dsn, $user, $password);
     // tells us when an error happens
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -22,7 +22,7 @@
     throw new PDOException($Exception -> getMessage());
   }
 
-  // References the Crud object and its methods
+  // references the Crud object and its methods
   require_once "crud.php";
   $crud = new Crud($pdo);
 ?>

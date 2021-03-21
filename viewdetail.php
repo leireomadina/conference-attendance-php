@@ -7,7 +7,7 @@
 
   // get attendee by id
   if(!isset($_GET["id"])) {
-    echo "<h1 class='text-danger mt-4 mb-4'>Please check details and try again</h1>";
+    include "includes/errormessage.php";
   } else {
     $id = $_GET["id"];
     $result = $crud->getAttendeeDetails($id); // returns an array

@@ -1,8 +1,9 @@
 <?php 
     require_once "db/db-config.php"; 
 
-   if(!$_GET["id"]) {
-     echo "Error";
+    if(!$_GET["id"]) {
+      include "includes/errormessage.php";
+      header("Location: viewrecords.php"); 
    } else {
      // gets attendee id value
      $id = $_GET["id"];
@@ -13,7 +14,7 @@
      if($result) {
        header("location: viewrecords.php");
      } else {
-       echo "Error";
+      include "includes/errormessage.php";
      }
    }
 ?>

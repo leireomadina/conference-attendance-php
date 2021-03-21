@@ -16,26 +16,15 @@
     $isSuccess = $crud->insertAttendees($fname, $lname, $dob, $email, $contact, $specialty);
 
     if($isSuccess) {
-      echo '
-      <header>
-        <h2 class="text-center text-success m-4">
-          Congrats! You have been registered.
-        </h2>
-        <p class="text-center text-success">Have fun!</p>
-      </header>';
+      include "includes/successmessage.php";
     } else {
-      echo '
-      <header>
-        <h2 class="text-center text-danger m-4">
-          Sorry, there was an error in processing.
-        </h2>
-      </header';
+      include "includes/errormessage.php";
     }
   }
 ?>
 
 <main> 
-  <article class="card" style="width: 18rem;">
+  <article class="card mb-4 mt-4" style="width: 18rem;">
     <div class="card-body">
       <h3 class="card-title">
         <?php echo $_POST["firstname"] . " " . $_POST["lastname"] ?>
@@ -47,6 +36,7 @@
     </div>
   </article>
 </main>
+
 <!-- footer -->
 <?php 
   require_once "./includes/footer.php" 

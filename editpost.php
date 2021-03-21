@@ -18,9 +18,9 @@
         // redirects to main page
         header("Location: viewrecords.php"); 
       } else {
-        echo "Error";
+        include "includes/errormessage.php";
       }
    } else {
-     echo "Error";
+    include "includes/errormessage.php";
    }
 ?>

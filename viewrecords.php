@@ -25,6 +25,7 @@
         <td>
           <a href="viewdetail.php?id=<?php echo $result["attendee_id"] ?>" class="btn btn-primary">View</a>
           <a href="edit.php?id=<?php echo $result["attendee_id"] ?>" class="btn btn-warning">Edit</a>
+          <a href="delete.php?id=<?php echo $result["attendee_id"] ?>" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this record?');">Delete</a>
         </td>
       </tr>
     <?php } ?> 

@@ -70,6 +70,20 @@
       return $result;
     }
 
+    // deletes an existing redord from the attendee database
+    public function deleteAttendee($id) {
+      try{
+        $sql = "DELETE FROM attendee WHERE attendee_id = :id";
+        $stmt = $this->db->prepare($sql);
+        $stmt->bindparam(":id", $id);
+        $stmt->execute();
+        return true;
+      }catch (PDOException $Exception) {
+        echo $Exception->getMessage();
+        return false; 
+      }
+    }
+
     // selects an existing record from the speciealties database
     public function getSpecialties() {
       $sql = "SELECT * FROM specialties";

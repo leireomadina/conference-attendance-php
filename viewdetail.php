@@ -24,6 +24,11 @@
     <p class="card-text">Contact number: <?php echo $result["contactnumber"]?></p>
   </div>
 </article>
+<div class="mb-4">
+  <a href="viewrecords.php" class="btn btn-info">Back to list</a>
+  <a href="edit.php?id=<?php echo $result["attendee_id"] ?>" class="btn btn-warning">Edit</a>
+  <a href="delete.php?id=<?php echo $result["attendee_id"] ?>" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this record?');">Delete</a>
+</div>
 
   <?php   }?>
 <!-- footer -->

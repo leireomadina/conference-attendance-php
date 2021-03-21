@@ -23,11 +23,11 @@
     <input type="hidden" name="id" value="<?php echo $attendee["attendee_id"] ?>">
     <div class="mb-3">
       <label for="firstname" class="form-label">Name</label>
-      <input type="text" class="form-control" id="firstname" aria-describedby="firstName" name="firstname" value="<?php echo $attendee["firstname"]?>">
+      <input required type="text" class="form-control" id="firstname" aria-describedby="firstName" name="firstname" value="<?php echo $attendee["firstname"]?>">
     </div>
     <div class="mb-3">
       <label for="lastname" class="form-label">Last name</label>
-      <input type="text" class="form-control" id="lastname" aria-describedby="lastName" name="lastname" value="<?php echo $attendee["lastname"]?>">
+      <input required type="text" class="form-control" id="lastname" aria-describedby="lastName" name="lastname" value="<?php echo $attendee["lastname"]?>">
     </div>
     <div class="mb-3">
       <label for="dateofbirth" class="form-label">Date of birth</label>
@@ -46,7 +46,7 @@
     </div>
     <div class="mb-3">
       <label for="email" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" value="<?php echo $attendee["emailaddress"]?>">
+      <input required type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" value="<?php echo $attendee["emailaddress"]?>">
       <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </div>
     <div class="mb-3">
@@ -54,16 +54,17 @@
       <input type="text" class="form-control" id="phone" aria-describedby="phoneHelp" name="phone" value="<?php echo $attendee["contactnumber"]?>">
       <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.</div>
     </div>
-    <div class="mb-3">
+    <!-- <div class="mb-3">
       <label for="password" class="form-label">Password</label>
       <input type="password" class="form-control" id="password" name="password">
-    </div>
-    <div class="mb-3 form-check">
+    </div> -->
+    <!-- <div class="mb-3 form-check">
       <input type="checkbox" class="form-check-input" id="formcheck" name="formcheck">
       <label class="form-check-label" for="formcheck" >Check me out</label>
-    </div>
+    </div> -->
     <div class="d-grid gap-2 col-6 mx-auto">
-      <button type="submit" class="btn btn-success btn-lg m-3" name="submit">Save changes</button>
+      <button type="submit" class="btn btn-success mb-2" name="submit">Save changes</button>
+      <a href="viewrecords.php" class="btn btn-info">Back to list</a>
     </div>
   </form>
 </main>

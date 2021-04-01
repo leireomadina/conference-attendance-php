@@ -28,7 +28,7 @@ https://conference-attendance.herokuapp.com/ -->
 - Database connection with PDO method (PHP Data Objects) and exception handling
 - CRUD operations: Create, Read, Update and Delete MySQL database records.
 - Remote database management with MySQL Workbench
-- User authentication
+- User authentication 
 - Responsive web design with mobile first approach
   
 More features coming soon...

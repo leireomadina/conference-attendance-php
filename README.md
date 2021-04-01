@@ -12,13 +12,11 @@ This is a CRUD app that lets the user sign up for an IT conference. It is built 
 - CSS3
 - HTML5
   
-<!-- 
-### Live preview
+<!-- ### Live preview
 
 Check this link to see the live version of the project (work in progress):
 
-https://attendance-crud-app.herokuapp.com/
--->
+https://conference-attendance.herokuapp.com/ -->
 
 ### Project features:
 
@@ -29,7 +27,8 @@ https://attendance-crud-app.herokuapp.com/
 - Remote database design with MySQL Workbench
 - Database connection with PDO method (PHP Data Objects) and exception handling
 - CRUD operations: Create, Read, Update and Delete MySQL database records.
-- Remote database design with MySQL
+- Remote database management with MySQL Workbench
+- User authentification
 - Responsive web design with mobile first approach
   
 More features coming soon...

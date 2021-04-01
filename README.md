@@ -24,11 +24,11 @@ https://conference-attendance.herokuapp.com/ -->
 - Apache server
 - Form + POST method setup
 - Local database design using phpMyAdmin
-- Remote database design with MySQL Workbench
+- Remote database functionality with FreeSQLdatabase and MySQL Workbench
 - Database connection with PDO method (PHP Data Objects) and exception handling
 - CRUD operations: Create, Read, Update and Delete MySQL database records.
 - Remote database management with MySQL Workbench
-- User authentification
+- User authentication
 - Responsive web design with mobile first approach
   
 More features coming soon...

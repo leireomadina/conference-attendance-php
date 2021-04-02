@@ -22,10 +22,8 @@
     // moves the file to our uploads folder
     move_uploaded_file($orig_file, $destination);
 
-    exit();
-
     // calls function to insert and track if success or not
-    $isSuccess = $crud->insertAttendees($fname, $lname, $dob, $email, $contact, $specialty);
+    $isSuccess = $crud->insertAttendees($fname, $lname, $dob, $email, $contact, $specialty, $destination);
     $specialtyName = $crud->getSpecialtyById($specialty);
 
     if($isSuccess) {
@@ -38,6 +36,7 @@
 
 <main> 
   <article class="card mb-4 mt-4" style="width: 18rem;">
+    <img src="<?php echo $destination?>" class="card-img-top"/>
     <div class="card-body">
       <h3 class="card-title">
         <?php echo $_POST["firstname"] . " " . $_POST["lastname"] ?>
@@ -48,6 +47,7 @@
       <p class="card-text">Date of birth: <?php echo $_POST["dateofbirth"]?></p>
       <p class="card-text">Email address: <?php echo $_POST["email"]?></p>
       <p class="card-text">Contact number: <?php echo $_POST["phone"]?></p>
+     
     </div>
   </article>
 </main>

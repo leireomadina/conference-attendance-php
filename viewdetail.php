@@ -14,6 +14,7 @@
 ?>
 
 <article class="card mt-4 mb-4" style="width: 18rem;">
+  <img src="<?php echo empty($result["avatar_path"]) ? "uploads/blank.jpg" :  $result["avatar_path"] ?>" class="card-img-top"/>
   <div class="card-body">
     <h3 class="card-title">
       <?php echo $result["firstname"] . " " . $result["lastname"] ?>

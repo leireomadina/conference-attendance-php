@@ -11,8 +11,9 @@
       $email = $_POST["email"];
       $contact = $_POST["phone"];
       $specialty = $_POST["specialty"];
+      $avatar_path = $_POST["avatar_path"];
       // calls function to insert and track if success or not
-      $result = $crud->editAttendee($id, $fname, $lname, $dob, $email, $contact, $specialty);
+      $result = $crud->editAttendee($id, $fname, $lname, $dob, $email, $contact, $specialty, $avatar_path);
 
       if($result) {
         // redirects to main page

@@ -54,6 +54,10 @@
       <input type="text" class="form-control" id="phone" aria-describedby="phoneHelp" name="phone" value="<?php echo $attendee["contactnumber"]?>">
       <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.</div>
     </div>
+    <div class="mb-4">
+      <label for="avatar" class="form-label">Upload image (optional)</label>
+      <input type="file" accept="image/*" class="form-control" id="avatar" aria-describedby="avatarHelp" name="avatar" value="<?php echo $attendee["avatar_path"]?>">
+    </div>
     <!-- <div class="mb-3">
       <label for="password" class="form-label">Password</label>
       <input type="password" class="form-control" id="password" name="password">

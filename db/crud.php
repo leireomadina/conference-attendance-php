@@ -9,10 +9,10 @@
     }
 
     // inserts a new record into the attendee database
-    public function insertAttendees($fname, $lname, $dob, $email, $contact, $specialty) {
+    public function insertAttendees($fname, $lname, $dob, $email, $contact, $specialty, $avatar_path) {
       try {
         // phase 1: defines sql statement and prepares it for execution
-        $sql = "INSERT INTO attendee (firstname,lastname,dateofbirth,emailaddress,contactnumber,specialty_id) VALUES (:fname, :lname, :dob, :email, :contact, :specialty)";
+        $sql = "INSERT INTO attendee (firstname,lastname,dateofbirth,emailaddress,contactnumber,specialty_id,avatar_path) VALUES (:fname, :lname, :dob, :email, :contact, :specialty, :avatar_path)";
         $stmt = $this->db->prepare($sql);
         //phase 2: binds all placeholders to the actual form values
         $stmt->bindparam(":fname", $fname);
@@ -21,6 +21,7 @@
         $stmt->bindparam(":email", $email);
         $stmt->bindparam(":contact", $contact);
         $stmt->bindparam(":specialty", $specialty);
+        $stmt->bindparam(":avatar_path", $avatar_path);
         //phase 3: execution statement
         $stmt->execute();
         return true; // success indicator
@@ -31,9 +32,9 @@
     }
 
     // edits an existing attendee record
-    public function editAttendee($id, $fname, $lname, $dob, $email, $contact, $specialty) {
+    public function editAttendee($id, $fname, $lname, $dob, $email, $contact, $specialty, $avatar_path) {
       try {
-        $sql = "UPDATE `attendee` SET `firstname`=:fname,`lastname`=:lname,`dateofbirth`=:dob,`emailaddress`=:email,`contactnumber`=:contact,`specialty_id`=:specialty WHERE attendee_id = :id ";
+        $sql = "UPDATE `attendee` SET `firstname`=:fname,`lastname`=:lname,`dateofbirth`=:dob,`emailaddress`=:email,`contactnumber`=:contact,`specialty_id`=:specialty,`avatar_path`=:avatar_path WHERE attendee_id = :id ";
         $stmt = $this->db->prepare($sql);
         //phase 3: binds all placeholders to the actual form values
         $stmt->bindparam(":id", $id);
@@ -43,6 +44,7 @@
         $stmt->bindparam(":email", $email);
         $stmt->bindparam(":contact", $contact);
         $stmt->bindparam(":specialty", $specialty);
+        $stmt->bindparam(":avatar_path", $avatar_path);
         //phase 4: execution statement
         $stmt->execute();
         return true;

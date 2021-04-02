@@ -1,5 +1,5 @@
 <main>
-  <form method="post" action="success.php">
+  <form method="post" action="success.php" enctype=multipart/form-data>
     <div class="mb-3">
       <label for="firstname" class="form-label">Name</label>
       <input required type="text" class="form-control" id="firstname" aria-describedby="firstName" name="firstname">
@@ -30,6 +30,10 @@
       <label for="phone" class="form-label">Contact number</label>
       <input type="text" class="form-control" id="phone" aria-describedby="phoneHelp" name="phone" >
       <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.</div>
+    </div>
+    <div class="mb-4">
+      <label for="avatar" class="form-label">Upload image (optional)</label>
+      <input type="file" accept="image/*" class="form-control" id="avatar" aria-describedby="avatarHelp" name="avatar" >
     </div>
     <!-- <div class="mb-3">
       <label for="password" class="form-label">Password</label>

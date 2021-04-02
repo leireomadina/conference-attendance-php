@@ -105,5 +105,20 @@
       }
     }
 
+    public function getSpecialtyById($id){
+      try{
+          $sql = "SELECT * FROM specialties WHERE specialty_id = :id";
+          $stmt = $this->db->prepare($sql);
+          $stmt->bindparam(":id", $id);
+          $stmt->execute();
+          $result = $stmt->fetch();
+          return $result;
+      }catch (PDOException $Exception) {
+          echo $Exception->getMessage();
+          return false;
+      }
+      
+  }
+
   }
 ?>
